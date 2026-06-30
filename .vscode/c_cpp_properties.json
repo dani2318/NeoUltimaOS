@@ -1,0 +1,37 @@
+{
+    "configurations": [
+        {
+            "name": "x86_64-elf",
+            "includePath": [
+                "${workspaceFolder}/src/kernel",
+                "${workspaceFolder}/src",
+                "${workspaceFolder}/src/libs",
+                "${workspaceFolder}/toolchain/edk2/MdePkg/Include",
+                "${workspaceFolder}/toolchain/edk2/MdePkg/Include/X64",
+                "${workspaceFolder}/toolchain/edk2/MdeModulePkg/Include",
+                "/usr/include/efi",
+                "/usr/include/efi/x86_64"
+            ],
+            "defines": [
+                "__KERNEL__",
+                "__x86_64__",
+                "__FREESTANDING__"
+            ],
+            "compilerPath": "/usr/bin/clang++",
+            "cStandard": "c23",
+            "cppStandard": "c++23",
+            "intelliSenseMode": "linux-gcc-x64",
+            "compilerArgs": [
+                "-g",
+                "-ffreestanding",
+                "-nostdlib",
+                "-fbuiltin",
+                "-I."
+            ],
+            "compileCommands": [
+                "${workspaceFolder}/compile_commands.json"
+            ]
+        }
+    ],
+    "version": 4
+}
